@@ -1,0 +1,1 @@
+{"templates": {"second": {"packages": ["requests"]}, "third": {"packages": ["telebot"]}, "fir": ["telebot", "requests"]}}

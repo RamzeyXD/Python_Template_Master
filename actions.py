@@ -30,17 +30,15 @@ def remove():
     template_name = input("Choose template name: ")
 
     templates = Template().get_templates()
+    temp_template = templates
 
-    try:
-        for i in templates['templates']:
-            if template_name == i:
-                del templates['templates'][i]
+    for i in templates['templates']:
+        if template_name == i:
+            del temp_template['templates'][i]
 
-                _save(templates)
+            _save(temp_template)
 
-                print(i, 'was removed')
-    except RuntimeError:
-        pass
+            print(i, 'was removed')
 
 
 def create():

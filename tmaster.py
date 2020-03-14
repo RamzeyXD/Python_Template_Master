@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-import os
-import sys
-import subprocess
-import json
 import data_message
 import actions
 
